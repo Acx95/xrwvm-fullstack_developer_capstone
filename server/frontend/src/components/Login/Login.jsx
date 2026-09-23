@@ -16,6 +16,7 @@ const Login = ({ onClose }) => {
 
     const res = await fetch(login_url, {
         method: "POST",
+      credentials: "include",
         headers: {
             "Content-Type": "application/json",
         },
