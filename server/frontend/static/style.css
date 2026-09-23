@@ -124,3 +124,104 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+.contact-page {
+  width: min(980px, 90%);
+  margin: 55px auto;
+}
+
+.contact-navbar {
+  min-height: 1in;
+  background-color: darkturquoise;
+}
+
+.contact-brand {
+  margin: 0 5% 0 0;
+}
+
+.contact-card {
+  padding: 48px;
+  border: 1px solid #d9d9d9;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffffff 0%, #f1ffff 100%);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.contact-intro {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.contact-intro img {
+  width: 250px;
+  max-width: 100%;
+}
+
+.contact-eyebrow {
+  margin-bottom: 8px;
+  color: rgb(97, 64, 128);
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contact-intro h1 {
+  margin-top: 0;
+  color: rgb(97, 64, 128);
+  font-size: 2.6rem;
+}
+
+.contact-description {
+  max-width: 520px;
+  margin-bottom: 0;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  padding-top: 30px;
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 18px;
+  border-left: 4px solid darkturquoise;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-detail-label {
+  color: #777;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-detail a {
+  color: rgb(97, 64, 128);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 25px;
+  }
+
+  .contact-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .contact-details {
+    grid-template-columns: 1fr;
+  }
+}
