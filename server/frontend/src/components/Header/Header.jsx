@@ -9,14 +9,11 @@ const Header = () => {
     const res = await fetch(logout_url, {
       method: "GET",
     });
-  
-    const json = await res.json();
-    if (json) {
+
+      if (res.ok) {
       let username = sessionStorage.getItem('username');
       sessionStorage.removeItem('username');
-      window.location.href = window.location.origin;
-      window.location.reload();
-      alert("Logging out "+username+"...")
+        window.location.href = window.location.origin;
     }
     else {
       alert("The user could not be logged out.")
